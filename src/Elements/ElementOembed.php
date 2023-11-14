@@ -22,6 +22,13 @@ class ElementOembed extends BaseElement
     private static $table_name = 'ElementOembed';
 
     /**
+     * @return array
+     */
+    private static $db = [
+
+    ];
+
+    /**
      * @var array
      */
     private static $inline_editable = false;
@@ -118,9 +125,9 @@ class ElementOembed extends BaseElement
 
             if ($iframe) {
                 // Extract the src attribute value
-                $src = $iframe->getAttribute('src');
-                $src = explode('?', $src);
-                return $src[0];
+                if ($src = $iframe->getAttribute('src')) {
+                    return $src;
+                }
             } else {
                 return null;
             }
