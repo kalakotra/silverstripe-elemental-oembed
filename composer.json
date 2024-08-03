@@ -14,9 +14,7 @@
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "require": {
-        "dnadesign/silverstripe-elemental": "^5.0",
         "dnadesign/silverstripe-embed": "dev-master",
-        "gorriecoe/silverstripe-htmltag": "dev-bugfix/depreciations as 1.1.0",
         "silverstripe/asset-admin": "^2.0"
     },
     "require-dev": {
